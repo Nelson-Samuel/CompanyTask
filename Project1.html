@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Company Scheduler</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1 class="head">COMPANY SCHEDULER</h1>
+            <div class="side">
+                <select id="catop" onclick="selop1()">
+                    <option value="Category">Category</option>
+                    <option value="all">All</option>
+                    <option value="work">Work</option>
+                    <option value="pwork">Personal Work</option>
+                </select>
+                <select id="sortop" onclick="selop2()">
+                    <option value="sort">Sort</option>
+                    <option value="asc">Ascending</option>
+                    <option value="dsc">Descending
+                    </option>
+                </select>
+            </div>
+        </div>
+        <table class="tb" width="100%" align="center">
+            <tr>
+                <th>
+                    CATEGORY
+                </th>
+                <th>
+                    SUB CATEGORY
+                </th>
+                <th>
+                    DURATION
+                </th>
+                <th>
+                    TASK
+                </th>
+            </tr>
+            <tbody class="elements" align="center">
+
+            </tbody>
+        </table>
+        <div class="ins">
+            <p>I Need to Insert a Element ?&#160;&#160;&#160;&#160;&#160; <span style="color:green;"> Insert
+                    here...</span>&#160;&#160; &#128071;</p>
+            <button class="btnin" onclick="Form1()">Insert a Task</button>
+        </div>
+
+    </div>
+
+    <div class="formcreate">
+            <h2 class="h2">Enter a Data<span class="timer"></span></h2>
+            <div class="info">
+                <input type="text" class='inpcat' placeholder="Category">
+               <input type="text" class="inpsubcat" name="name" placeholder="Sub Category">
+               <span><input type="text" class="inpdur"  style="width: 830px;" placeholder="Duration"> <button
+                class="t1" onclick="time12()">Start</button> <button class="t1"
+                onclick="stop()">Stop</button></span>
+                <input type="text"class='inptask'  placeholder="Task">
+            </div>
+           <span class="bottom"> <button class="btn-item"onclick='submit()' type="submit">Submit</button>
+            <button class="btn-item" onclick='Back()' type="submit">Back</button>
+        </span>
+    </div>
+
+</body>
+<script src="scrip.js"></script>
+
+</html>
